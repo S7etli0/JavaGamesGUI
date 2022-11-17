@@ -212,7 +212,7 @@ public class TennisGaming extends JFrame {
 					}
 				}
 				
-			}Restart();		 	
+			} Restart();		 	
 		}				
 	}
 	
@@ -252,8 +252,8 @@ public class TennisGaming extends JFrame {
 	
 		public static void Restart() {
 			
-				move = gen.nextInt(2);
-				start = gen.nextInt(10);
-				P1x=230; P1y = 55; P2x=230; P2y = 585; Bx=260; By = 320;
+			move = gen.nextInt(2);
+			start = gen.nextInt(10);
+			P1x=230; P1y = 55; P2x=230; P2y = 585; Bx=260; By = 320;
 		}	
 	}
