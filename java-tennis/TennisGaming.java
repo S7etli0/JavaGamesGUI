@@ -1,24 +1,13 @@
 package testTennins;
 
-	import java.awt.BorderLayout;
 	import java.awt.Color;
-	import java.awt.FlowLayout;
 	import java.awt.Font;
 	import java.awt.Graphics;
 	import java.awt.Graphics2D;
 	import java.awt.event.KeyEvent;
 	import java.awt.event.KeyListener;
-	import java.awt.event.MouseAdapter;
-	import java.awt.event.MouseEvent;
-	import java.awt.event.MouseListener;
-	import java.awt.event.MouseMotionAdapter;
-	import java.awt.event.MouseMotionListener;
 	import java.util.Random;
-	import javax.swing.JButton;
 	import javax.swing.JFrame;
-	import javax.swing.JLabel;
-	import javax.swing.JPanel;
-	import javax.swing.JTextField;
 
 public class TennisGaming extends JFrame {
 	
@@ -30,8 +19,6 @@ public class TennisGaming extends JFrame {
 
 	public TennisGaming() {
 		
-//		JPanel canvas = new JPanel();
-//		canvas.setLayout(new BorderLayout());	
 		move = gen.nextInt(2);
 		start = gen.nextInt(10);
 		System.out.println(start);
@@ -40,8 +27,7 @@ public class TennisGaming extends JFrame {
 
 			@Override
 			public void keyTyped(KeyEvent e) {
-				// TODO Auto-generated method stub
-				
+				// TODO Auto-generated method stub		
 			}
 
 			@Override
@@ -260,12 +246,9 @@ public class TennisGaming extends JFrame {
 			
 			g.setColor(Color.RED);
 			g.setFont(new Font("default", Font.BOLD, 14));
-//			g.drawString("Player1: "+p1, 45, 650);
-//			g.drawString("Player2: "+p2, 400, 650);
 			g.drawString("Player1 "+p1+"-"+p2+" Player2", 195, 660);
 
-		}		
-	
+		}			
 	
 		public static void Restart() {
 			
